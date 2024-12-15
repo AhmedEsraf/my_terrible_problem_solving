@@ -1,0 +1,31 @@
+# // write a program that solves a quadratic equation of the form ax² + bx + c = 0
+# // where the user provides values for a, b, and c.
+# // If it's impossible to
+# // calculate the roots because of a division by zero or a square root of a negative number,
+# // print "No real root"; otherwise, print the answers.
+
+
+import math
+
+# Input values for a, b, and c
+a = float(input("Enter value for a: "))
+b = float(input("Enter value for b: "))
+c = float(input("Enter value for c: "))
+
+# Check if a is zero
+if a == 0:
+    print("Invalid input: a cannot be zero for a quadratic equation.")
+else:
+    
+    dis = b**2 - 4*a*c
+
+    
+    if dis < 0:
+        print("No real root")
+    elif dis == 0:
+        x1 = -b / (2 * a)
+        print(f"x = {x1:.2f}")
+    elif dis > 0:
+        x1 = (-b + math.sqrt(dis)) / (2 * a)
+        x2 = (-b - math.sqrt(dis)) / (2 * a)
+        print(f"x1, x2 = {x1:.2f}, {x2:.2f}")

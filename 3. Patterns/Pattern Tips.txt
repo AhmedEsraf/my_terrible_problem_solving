@@ -1,0 +1,7 @@
+How to Approch:
+
+1. Number Of Lines = Number of rows = Numbers of times the loop will run.
+2. identify for every row no:
+	a. how many columns are there
+	b. how many elements are there
+3. What do you need to print?
